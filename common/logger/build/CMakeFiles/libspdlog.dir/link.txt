@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibspdlog.a CMakeFiles/libspdlog.dir/src/daily_rotating_file_sink.cpp.o CMakeFiles/libspdlog.dir/src/logger.cpp.o CMakeFiles/libspdlog.dir/src/logger_def.cpp.o
+/usr/bin/ranlib liblibspdlog.a

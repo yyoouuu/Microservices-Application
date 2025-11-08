@@ -1,0 +1,29 @@
+syntax = "proto3";  // 指定使用 proto3 语法版本
+
+package mic_ser;    // 定义包名，用于防止命名冲突
+
+option cc_generic_services = true;  // 允许生成通用的 C++ Service 基类
+
+// 语音识别请求
+message SpeechRecognitionReq
+{
+    string request_id = 1;   // 请求id
+    bytes speech_datas = 2;  // 语音数据
+    string user_id = 3;      // 用户id（可选，默认为空）
+    string session_id = 4;   // 登录会话id（可选，默认为空）
+}
+
+// 语音识别响应
+message SpeechRecognitionRsp
+{
+    string request_id = 1;          // 请求id
+    bool success = 2;               // 请求处理结果
+    string errmsg = 3;              // 失败原因（可选，默认为空）
+    string recognition_result = 4;  // 识别数据（可选，默认为空）
+}
+
+// 语音识别服务
+service SpeechService
+{
+    rpc SpeechRecogntion(SpeechRecognitionReq) returns (SpeechRecognitionRsp);
+}
