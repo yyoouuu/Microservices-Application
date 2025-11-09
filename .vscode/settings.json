@@ -72,7 +72,14 @@
         "locale": "cpp",
         "print": "cpp",
         "queue": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "source_location": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "unordered_set": "cpp",
+        "numeric": "cpp",
+        "fstream": "cpp",
+        "__tree": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

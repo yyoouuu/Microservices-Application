@@ -1,9 +1,0 @@
-/home/amoureux/amoureux/Microservices/project-root/common/logger/build/CMakeFiles/libspdlog.dir
-/home/amoureux/amoureux/Microservices/project-root/common/logger/build/CMakeFiles/edit_cache.dir
-/home/amoureux/amoureux/Microservices/project-root/common/logger/build/CMakeFiles/rebuild_cache.dir
-/home/amoureux/amoureux/Microservices/project-root/common/logger/build/spdlog_build/CMakeFiles/spdlog.dir
-/home/amoureux/amoureux/Microservices/project-root/common/logger/build/spdlog_build/CMakeFiles/edit_cache.dir
-/home/amoureux/amoureux/Microservices/project-root/common/logger/build/spdlog_build/CMakeFiles/rebuild_cache.dir
-/home/amoureux/amoureux/Microservices/project-root/common/logger/build/test/CMakeFiles/test.dir
-/home/amoureux/amoureux/Microservices/project-root/common/logger/build/test/CMakeFiles/edit_cache.dir
-/home/amoureux/amoureux/Microservices/project-root/common/logger/build/test/CMakeFiles/rebuild_cache.dir

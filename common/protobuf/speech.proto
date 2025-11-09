@@ -16,7 +16,7 @@ message SpeechRecognitionReq
 // 语音识别响应
 message SpeechRecognitionRsp
 {
-    string request_id = 1;          // 请求id
+    string response_id = 1;          // 请求id
     bool success = 2;               // 请求处理结果
     string errmsg = 3;              // 失败原因（可选，默认为空）
     string recognition_result = 4;  // 识别数据（可选，默认为空）

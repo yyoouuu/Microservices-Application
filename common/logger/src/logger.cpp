@@ -7,7 +7,7 @@ Logger::Logger()
 	//默认指定记录路径
 	add_color_console("default_logger", LEVEL_TRACE);	
 	add_rotating_file("default_logger", "logs/app.log");
-	init();
+	default_init();
 }
 
 Logger::~Logger()
@@ -51,7 +51,7 @@ bool Logger::add_daily_file(const std::string& logger_name, const std::string& f
 
 bool Logger::add_daily_rotating_file(const std::string& logger_name, const std::string& base_dir, const std::string& file_name, int hour, int minute, size_t max_file_size, size_t max_files, const int& level, const std::string& format)
 {
-	printf("[log]: addDailyRotatingFile, logName=%s  baseDir=%s  fileName=%s  hour=%d  minute=%d  maxFileSize=%d  maxFile=%d  level=%d\n", logger_name.data(), base_dir, file_name.data(), max_file_size, max_files, hour, minute);
+	printf("[log]: addDailyRotatingFile, logName=%s  baseDir=%s  fileName=%s  hour=%d  minute=%d  maxFileSize=%zu  maxFile=%zu  level=%d\n", logger_name.data(), base_dir.c_str(), file_name.data(), hour, minute, max_file_size, max_files, level);
 	auto daily_rotating_sink = std::make_shared<spdlog::sinks::daily_rotating_file_sink>(base_dir, file_name, max_file_size, max_files, hour, minute);
 	daily_rotating_sink->set_level(spdlog::level::level_enum(level));
 	daily_rotating_sink->set_pattern(format);
@@ -59,9 +59,56 @@ bool Logger::add_daily_rotating_file(const std::string& logger_name, const std::
 
 	return true;
 }
-//初始化
-bool Logger::init(const int& out_mode)
+//默认初始化
+bool Logger::default_init(const int& out_mode)
 {
+	if (out_mode == MODE_ASYNC)//祑祭
+	{
+		printf("[log]: mode=ASYNC \n");
+		for (auto e : map_logger_param_)
+		{
+			std::string Log_name = e.first;
+			std::vector<spdlog::sink_ptr> vec_sink(e.second);
+			auto tp = std::make_shared<spdlog::details::thread_pool>(1024000, 1);
+			auto logger = std::make_shared<spdlog::async_logger>(Log_name, begin(vec_sink), end(vec_sink), tp, spdlog::async_overflow_policy::block);
+			update_thread_pool_map(Log_name, tp);
+			spdlog::register_logger(logger);
+		}
+	}
+	else//肮祭
+	{
+		printf("[log]:  mode=SYNC \n");
+		for (auto e : map_logger_param_)
+		{
+			std::string Log_name = e.first;
+			std::vector<spdlog::sink_ptr> vec_sink(e.second);
+			auto logger = std::make_shared<spdlog::logger>(Log_name, begin(vec_sink), end(vec_sink));
+			spdlog::register_logger(logger);
+		}
+	}
+
+
+	spdlog::set_level(spdlog::level::trace);
+	spdlog::flush_on(spdlog::level::info);
+	spdlog::flush_every(std::chrono::seconds(3));
+	//spdlog::set_pattern(format);
+
+	map_logger_param_.clear();
+	return true;
+}
+//初始化
+bool Logger::init(const std::string& logger_name, const std::string& base_dir,const int& out_mode)
+{
+	printf("[log]: Initializing logger: %s, base_dir=%s, mode=%s\n",
+           logger_name.c_str(),
+           base_dir.c_str(),
+           (out_mode == MODE_ASYNC ? "ASYNC" : "SYNC"));
+	 // 2. 添加控制台输出（带颜色）
+    add_color_console(logger_name);
+
+    // 3. 添加轮转文件输出
+	std::string log_file_path = base_dir + "/" + logger_name + ".txt";
+    add_rotating_file(logger_name, log_file_path);
 	if (out_mode == MODE_ASYNC)//祑祭
 	{
 		printf("[log]: mode=ASYNC \n");

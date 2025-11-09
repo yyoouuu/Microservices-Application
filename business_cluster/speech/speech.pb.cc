@@ -71,7 +71,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_speech_2eproto::offsets[] PROT
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionRsp, request_id_),
+  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionRsp, response_id_),
   PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionRsp, success_),
   PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionRsp, errmsg_),
   PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionRsp, recognition_result_),
@@ -90,12 +90,12 @@ const char descriptor_table_protodef_speech_2eproto[] PROTOBUF_SECTION_VARIABLE(
   "\n\014speech.proto\022\007mic_ser\"e\n\024SpeechRecogni"
   "tionReq\022\022\n\nrequest_id\030\001 \001(\t\022\024\n\014speech_da"
   "tas\030\002 \001(\014\022\017\n\007user_id\030\003 \001(\t\022\022\n\nsession_id"
-  "\030\004 \001(\t\"g\n\024SpeechRecognitionRsp\022\022\n\nreques"
-  "t_id\030\001 \001(\t\022\017\n\007success\030\002 \001(\010\022\016\n\006errmsg\030\003 "
-  "\001(\t\022\032\n\022recognition_result\030\004 \001(\t2a\n\rSpeec"
-  "hService\022P\n\020SpeechRecogntion\022\035.mic_ser.S"
-  "peechRecognitionReq\032\035.mic_ser.SpeechReco"
-  "gnitionRspB\003\200\001\001b\006proto3"
+  "\030\004 \001(\t\"h\n\024SpeechRecognitionRsp\022\023\n\013respon"
+  "se_id\030\001 \001(\t\022\017\n\007success\030\002 \001(\010\022\016\n\006errmsg\030\003"
+  " \001(\t\022\032\n\022recognition_result\030\004 \001(\t2a\n\rSpee"
+  "chService\022P\n\020SpeechRecogntion\022\035.mic_ser."
+  "SpeechRecognitionReq\032\035.mic_ser.SpeechRec"
+  "ognitionRspB\003\200\001\001b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_speech_2eproto_deps[1] = {
 };
@@ -106,7 +106,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_spe
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_speech_2eproto_once;
 static bool descriptor_table_speech_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_speech_2eproto = {
-  &descriptor_table_speech_2eproto_initialized, descriptor_table_protodef_speech_2eproto, "speech.proto", 343,
+  &descriptor_table_speech_2eproto_initialized, descriptor_table_protodef_speech_2eproto, "speech.proto", 344,
   &descriptor_table_speech_2eproto_once, descriptor_table_speech_2eproto_sccs, descriptor_table_speech_2eproto_deps, 2, 0,
   schemas, file_default_instances, TableStruct_speech_2eproto::offsets,
   file_level_metadata_speech_2eproto, 2, file_level_enum_descriptors_speech_2eproto, file_level_service_descriptors_speech_2eproto,
@@ -444,9 +444,9 @@ SpeechRecognitionRsp::SpeechRecognitionRsp(const SpeechRecognitionRsp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  request_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_request_id().empty()) {
-    request_id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.request_id_);
+  response_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_response_id().empty()) {
+    response_id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.response_id_);
   }
   errmsg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from._internal_errmsg().empty()) {
@@ -462,7 +462,7 @@ SpeechRecognitionRsp::SpeechRecognitionRsp(const SpeechRecognitionRsp& from)
 
 void SpeechRecognitionRsp::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SpeechRecognitionRsp_speech_2eproto.base);
-  request_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  response_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   errmsg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   recognition_result_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   success_ = false;
@@ -474,7 +474,7 @@ SpeechRecognitionRsp::~SpeechRecognitionRsp() {
 }
 
 void SpeechRecognitionRsp::SharedDtor() {
-  request_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  response_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   errmsg_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   recognition_result_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -494,7 +494,7 @@ void SpeechRecognitionRsp::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  request_id_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  response_id_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   errmsg_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   recognition_result_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   success_ = false;
@@ -508,12 +508,12 @@ const char* SpeechRecognitionRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAM
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // string request_id = 1;
+      // string response_id = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_request_id();
+          auto str = _internal_mutable_response_id();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "mic_ser.SpeechRecognitionRsp.request_id"));
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "mic_ser.SpeechRecognitionRsp.response_id"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -568,14 +568,14 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // string request_id = 1;
-  if (this->request_id().size() > 0) {
+  // string response_id = 1;
+  if (this->response_id().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_request_id().data(), static_cast<int>(this->_internal_request_id().length()),
+      this->_internal_response_id().data(), static_cast<int>(this->_internal_response_id().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "mic_ser.SpeechRecognitionRsp.request_id");
+      "mic_ser.SpeechRecognitionRsp.response_id");
     target = stream->WriteStringMaybeAliased(
-        1, this->_internal_request_id(), target);
+        1, this->_internal_response_id(), target);
   }
 
   // bool success = 2;
@@ -620,11 +620,11 @@ size_t SpeechRecognitionRsp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string request_id = 1;
-  if (this->request_id().size() > 0) {
+  // string response_id = 1;
+  if (this->response_id().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_request_id());
+        this->_internal_response_id());
   }
 
   // string errmsg = 3;
@@ -677,9 +677,9 @@ void SpeechRecognitionRsp::MergeFrom(const SpeechRecognitionRsp& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.request_id().size() > 0) {
+  if (from.response_id().size() > 0) {
 
-    request_id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.request_id_);
+    response_id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.response_id_);
   }
   if (from.errmsg().size() > 0) {
 
@@ -715,7 +715,7 @@ bool SpeechRecognitionRsp::IsInitialized() const {
 void SpeechRecognitionRsp::InternalSwap(SpeechRecognitionRsp* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  request_id_.Swap(&other->request_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+  response_id_.Swap(&other->response_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   errmsg_.Swap(&other->errmsg_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());

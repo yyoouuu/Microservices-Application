@@ -366,25 +366,25 @@ class SpeechRecognitionRsp :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kRequestIdFieldNumber = 1,
+    kResponseIdFieldNumber = 1,
     kErrmsgFieldNumber = 3,
     kRecognitionResultFieldNumber = 4,
     kSuccessFieldNumber = 2,
   };
-  // string request_id = 1;
-  void clear_request_id();
-  const std::string& request_id() const;
-  void set_request_id(const std::string& value);
-  void set_request_id(std::string&& value);
-  void set_request_id(const char* value);
-  void set_request_id(const char* value, size_t size);
-  std::string* mutable_request_id();
-  std::string* release_request_id();
-  void set_allocated_request_id(std::string* request_id);
+  // string response_id = 1;
+  void clear_response_id();
+  const std::string& response_id() const;
+  void set_response_id(const std::string& value);
+  void set_response_id(std::string&& value);
+  void set_response_id(const char* value);
+  void set_response_id(const char* value, size_t size);
+  std::string* mutable_response_id();
+  std::string* release_response_id();
+  void set_allocated_response_id(std::string* response_id);
   private:
-  const std::string& _internal_request_id() const;
-  void _internal_set_request_id(const std::string& value);
-  std::string* _internal_mutable_request_id();
+  const std::string& _internal_response_id() const;
+  void _internal_set_response_id(const std::string& value);
+  std::string* _internal_mutable_response_id();
   public:
 
   // string errmsg = 3;
@@ -433,7 +433,7 @@ class SpeechRecognitionRsp :
   class _Internal;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr request_id_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr response_id_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr errmsg_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr recognition_result_;
   bool success_;
@@ -754,64 +754,64 @@ inline void SpeechRecognitionReq::set_allocated_session_id(std::string* session_
 
 // SpeechRecognitionRsp
 
-// string request_id = 1;
-inline void SpeechRecognitionRsp::clear_request_id() {
-  request_id_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+// string response_id = 1;
+inline void SpeechRecognitionRsp::clear_response_id() {
+  response_id_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline const std::string& SpeechRecognitionRsp::request_id() const {
-  // @@protoc_insertion_point(field_get:mic_ser.SpeechRecognitionRsp.request_id)
-  return _internal_request_id();
+inline const std::string& SpeechRecognitionRsp::response_id() const {
+  // @@protoc_insertion_point(field_get:mic_ser.SpeechRecognitionRsp.response_id)
+  return _internal_response_id();
 }
-inline void SpeechRecognitionRsp::set_request_id(const std::string& value) {
-  _internal_set_request_id(value);
-  // @@protoc_insertion_point(field_set:mic_ser.SpeechRecognitionRsp.request_id)
+inline void SpeechRecognitionRsp::set_response_id(const std::string& value) {
+  _internal_set_response_id(value);
+  // @@protoc_insertion_point(field_set:mic_ser.SpeechRecognitionRsp.response_id)
 }
-inline std::string* SpeechRecognitionRsp::mutable_request_id() {
-  // @@protoc_insertion_point(field_mutable:mic_ser.SpeechRecognitionRsp.request_id)
-  return _internal_mutable_request_id();
+inline std::string* SpeechRecognitionRsp::mutable_response_id() {
+  // @@protoc_insertion_point(field_mutable:mic_ser.SpeechRecognitionRsp.response_id)
+  return _internal_mutable_response_id();
 }
-inline const std::string& SpeechRecognitionRsp::_internal_request_id() const {
-  return request_id_.GetNoArena();
+inline const std::string& SpeechRecognitionRsp::_internal_response_id() const {
+  return response_id_.GetNoArena();
 }
-inline void SpeechRecognitionRsp::_internal_set_request_id(const std::string& value) {
+inline void SpeechRecognitionRsp::_internal_set_response_id(const std::string& value) {
   
-  request_id_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+  response_id_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
 }
-inline void SpeechRecognitionRsp::set_request_id(std::string&& value) {
+inline void SpeechRecognitionRsp::set_response_id(std::string&& value) {
   
-  request_id_.SetNoArena(
+  response_id_.SetNoArena(
     &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:mic_ser.SpeechRecognitionRsp.request_id)
+  // @@protoc_insertion_point(field_set_rvalue:mic_ser.SpeechRecognitionRsp.response_id)
 }
-inline void SpeechRecognitionRsp::set_request_id(const char* value) {
+inline void SpeechRecognitionRsp::set_response_id(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   
-  request_id_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:mic_ser.SpeechRecognitionRsp.request_id)
+  response_id_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:mic_ser.SpeechRecognitionRsp.response_id)
 }
-inline void SpeechRecognitionRsp::set_request_id(const char* value, size_t size) {
+inline void SpeechRecognitionRsp::set_response_id(const char* value, size_t size) {
   
-  request_id_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+  response_id_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:mic_ser.SpeechRecognitionRsp.request_id)
+  // @@protoc_insertion_point(field_set_pointer:mic_ser.SpeechRecognitionRsp.response_id)
 }
-inline std::string* SpeechRecognitionRsp::_internal_mutable_request_id() {
+inline std::string* SpeechRecognitionRsp::_internal_mutable_response_id() {
   
-  return request_id_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  return response_id_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline std::string* SpeechRecognitionRsp::release_request_id() {
-  // @@protoc_insertion_point(field_release:mic_ser.SpeechRecognitionRsp.request_id)
+inline std::string* SpeechRecognitionRsp::release_response_id() {
+  // @@protoc_insertion_point(field_release:mic_ser.SpeechRecognitionRsp.response_id)
   
-  return request_id_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  return response_id_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
-inline void SpeechRecognitionRsp::set_allocated_request_id(std::string* request_id) {
-  if (request_id != nullptr) {
+inline void SpeechRecognitionRsp::set_allocated_response_id(std::string* response_id) {
+  if (response_id != nullptr) {
     
   } else {
     
   }
-  request_id_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), request_id);
-  // @@protoc_insertion_point(field_set_allocated:mic_ser.SpeechRecognitionRsp.request_id)
+  response_id_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), response_id);
+  // @@protoc_insertion_point(field_set_allocated:mic_ser.SpeechRecognitionRsp.response_id)
 }
 
 // bool success = 2;

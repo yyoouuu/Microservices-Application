@@ -33,8 +33,8 @@ int main()
 
     // 调用识别接口，将音频文件转换为文字
     // 返回值类型string
-    std::string result = speechrecognizer->recognize(file_path);
-    std::cout << result << std::endl;
+    std::string recognition_result = speechrecognizer->recognize(file_path);
+    std::cout << recognition_result << std::endl;
     return 0;
 }
 
