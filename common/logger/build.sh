@@ -26,7 +26,7 @@ echo "libspdlog.a built successfully."
 # 编译 test 可执行文件
 # -----------------------
 echo "Building test executable..."
-g++ -g -O0 -std=c++17 -I$LOGGER_INCLUDE -I$SPEECH_INCLUDE -I$SPDLOG_INCLUDE $TEST_DIR/*.cpp \
+g++ -g -O0 -std=c++11 -I$LOGGER_INCLUDE -I$SPEECH_INCLUDE -I$SPDLOG_INCLUDE $TEST_DIR/*.cpp \
     -L. -lamo_log -lpthread -o $OUTPUT_DIR/test
 
 echo "Build success: $OUTPUT_DIR/test"

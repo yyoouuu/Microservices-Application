@@ -1,0 +1,21 @@
+[2025-11-11 11:29:41.176] [amo_etcd.h,54] [10348] [error]: Lease 尚未创建，无法注册
+[2025-11-11 11:38:33.080] [amo_etcd.h,54] [10557] [error]: Lease 尚未创建，无法注册
+[2025-11-11 12:24:39.026] [amo_etcd.h,54] [15088] [error]: Lease 尚未创建，无法注册
+[2025-11-11 13:06:28.811] [amo_etcd.h,54] [16960] [info]: 注册成功: server/user/instance1   127.0.0.1:8080
+[2025-11-11 13:06:28.812] [amo_etcd.h,72] [16960] [debug]: 服务注销: server/user/instance1
+[2025-11-11 13:06:28.813] [test.cpp,12] [17037] [info]: 服务上线[PUT]: server/user/instance1   127.0.0.1:8080
+[2025-11-11 13:06:28.813] [amo_etcd.h,133] [17037] [debug]: 新增服务: server/user/instance1-127.0.0.1:8080
+[2025-11-11 13:06:28.813] [test.cpp,17] [17037] [info]: 服务下线[DELETE]: server/user/instance1   127.0.0.1:8080
+[2025-11-11 13:06:28.813] [amo_etcd.h,139] [17037] [debug]: 下线服务: server/user/instance1-127.0.0.1:8080
+[2025-11-11 13:09:06.685] [test.cpp,12] [17232] [info]: 服务上线[PUT]: server/user/instance2   127.0.0.1:8081
+[2025-11-11 13:09:06.685] [amo_etcd.h,133] [17232] [debug]: 新增服务: server/user/instance2-127.0.0.1:8081
+[2025-11-11 13:09:06.685] [amo_etcd.h,54] [17155] [info]: 注册成功: server/user/instance2   127.0.0.1:8081
+[2025-11-11 13:09:06.686] [test.cpp,17] [17232] [info]: 服务下线[DELETE]: server/user/instance2   127.0.0.1:8081
+[2025-11-11 13:09:06.686] [amo_etcd.h,139] [17232] [debug]: 下线服务: server/user/instance2-127.0.0.1:8081
+[2025-11-11 13:09:06.686] [amo_etcd.h,72] [17155] [debug]: 服务注销: server/user/instance2
+[2025-11-11 13:12:00.921] [amo_etcd.h,133] [17502] [debug]: 新增服务: server/user/instance1-127.0.0.1:8080
+[2025-11-11 13:12:00.921] [amo_etcd.h,54] [17425] [info]: 注册成功: server/user/instance1   127.0.0.1:8080
+[2025-11-11 13:12:00.922] [amo_etcd.h,133] [17502] [debug]: 新增服务: server/user/instance2-127.0.0.1:8081
+[2025-11-11 13:12:00.922] [amo_etcd.h,54] [17425] [info]: 注册成功: server/user/instance2   127.0.0.1:8081
+[2025-11-11 13:12:00.923] [amo_etcd.h,139] [17502] [debug]: 下线服务: server/user/instance1-127.0.0.1:8080
+[2025-11-11 13:12:00.923] [amo_etcd.h,72] [17425] [debug]: 服务注销: server/user/instance1

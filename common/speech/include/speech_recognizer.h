@@ -34,7 +34,7 @@
  *
  */
 
-namespace speech
+namespace speech_ns
 {
     class SpeechRecognizer
     {
