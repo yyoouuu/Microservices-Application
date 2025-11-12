@@ -16,10 +16,10 @@ int main()
         //可以增加服务下线的本地缓存功能
     };
 
-    grpc_ns::Discovery::s_ptr discoverer = std::make_shared<grpc_ns::Discovery>(etcd_host,basedir,put_cb,del_cb);
+    etcd_ns::Discovery::s_ptr discoverer = std::make_shared<etcd_ns::Discovery>(etcd_host,basedir,put_cb,del_cb);
 
     //模拟注册服务
-    grpc_ns::Registry::s_ptr _register = std::make_shared<grpc_ns::Registry>(etcd_host,3);
+    etcd_ns::Registry::s_ptr _register = std::make_shared<etcd_ns::Registry>(etcd_host,3);
     std::string key = basedir + "/instance2";
     std::string value = "127.0.0.1:8081";
     std::cout << "模拟注册服务..." << std::endl;

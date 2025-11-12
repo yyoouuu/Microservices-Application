@@ -1,0 +1,78 @@
+[2025-11-11 18:46:49.027] [SpeechService.h,120] [38053] [info]: 添加Rpc服务成功！
+[2025-11-11 18:50:34.549] [SpeechService.h,120] [38320] [info]: 添加Rpc服务成功！
+[2025-11-11 18:56:25.579] [SpeechService.h,120] [38799] [info]: 添加Rpc服务成功！
+[2025-11-11 18:58:11.750] [SpeechService.h,120] [38995] [info]: 添加Rpc服务成功！
+[2025-11-11 18:58:32.206] [SpeechService.h,120] [39157] [info]: 添加Rpc服务成功！
+[2025-11-11 18:58:32.206] [SpeechService.h,124] [39157] [info]: 添加Rpc服务成功！
+[2025-11-11 18:59:00.782] [SpeechService.h,120] [39312] [info]: 添加Rpc服务成功！
+[2025-11-11 18:59:00.783] [SpeechService.h,126] [39312] [info]: 添加Rpc服务成功！
+[2025-11-11 19:00:33.880] [SpeechService.h,120] [39503] [info]: 添加Rpc服务成功！
+[2025-11-11 19:07:04.989] [SpeechService.h,120] [40521] [info]: 添加Rpc服务成功！
+[2025-11-11 19:11:06.451] [SpeechService.h,120] [40795] [info]: 添加Rpc服务成功！
+[2025-11-11 19:11:40.425] [SpeechService.h,120] [40918] [info]: 添加Rpc服务成功！
+[2025-11-11 19:12:08.035] [SpeechService.h,120] [41042] [info]: 添加Rpc服务成功！
+[2025-11-11 19:19:50.582] [SpeechService.h,121] [41395] [info]: 添加Rpc服务成功！
+[2025-11-11 19:26:36.021] [SpeechService.h,121] [41643] [info]: 添加Rpc服务成功！
+[2025-11-11 19:50:34.765] [SpeechService.h,121] [45693] [info]: 添加Rpc服务成功！
+[2025-11-11 19:50:34.768] [SpeechService.h,136] [45693] [info]: 服务启动成功！
+[2025-11-11 19:50:34.845] [amo_etcd.h,54] [45693] [info]: 注册成功: /service/speech_service/instance   127.0.0.1:10001
+[2025-11-11 19:50:34.846] [SpeechService.h,161] [45693] [info]: 语音识别子服务实例构建成功！
+[2025-11-11 20:28:55.520] [SpeechService.h,122] [46178] [info]: 添加Rpc服务成功！
+[2025-11-11 20:28:55.521] [SpeechService.h,132] [46178] [error]: 服务启动失败！
+[2025-11-11 20:30:53.834] [SpeechService.h,122] [46464] [info]: 添加Rpc服务成功！
+[2025-11-11 20:30:53.837] [SpeechService.h,137] [46464] [info]: 服务启动成功！
+[2025-11-11 20:30:53.879] [amo_etcd.h,54] [46464] [info]: 注册成功: /service/speech_service/instance   127.0.0.1:10001
+[2025-11-11 20:30:53.880] [SpeechService.h,162] [46464] [info]: 语音识别子服务实例构建成功！
+[2025-11-11 20:31:36.003] [SpeechService.h,71] [46464] [info]: rpc_server启动成功
+[2025-11-12 14:08:19.610] [SpeechService.h,122] [57386] [info]: 添加Rpc服务成功！
+[2025-11-12 14:08:19.614] [SpeechService.h,137] [57386] [info]: 服务启动成功！
+[2025-11-12 14:08:19.686] [amo_etcd.h,54] [57386] [info]: 注册成功: /service/speech_service/instance   127.0.0.1:10001
+[2025-11-12 14:08:19.686] [SpeechService.h,162] [57386] [info]: 语音识别子服务实例构建成功！
+[2025-11-12 14:08:25.685] [SpeechService.h,71] [57386] [info]: rpc_server启动成功
+[2025-11-12 14:11:33.113] [SpeechService.h,122] [57966] [info]: 添加Rpc服务成功！
+[2025-11-12 14:13:40.912] [SpeechService.h,122] [59151] [info]: 添加Rpc服务成功！
+[2025-11-12 14:15:47.754] [SpeechService.h,122] [59546] [info]: 添加Rpc服务成功！
+[2025-11-12 14:17:25.684] [SpeechService.h,122] [59838] [info]: 添加Rpc服务成功！
+[2025-11-12 14:20:13.734] [SpeechService.h,122] [60003] [info]: 添加Rpc服务成功！
+[2025-11-12 14:28:46.862] [SpeechService.h,122] [64517] [info]: 添加Rpc服务成功！
+[2025-11-12 14:35:30.145] [SpeechService.h,122] [65181] [info]: 添加Rpc服务成功！
+[2025-11-12 14:37:55.253] [SpeechService.h,122] [65303] [info]: 添加Rpc服务成功！
+[2025-11-12 14:37:55.255] [SpeechService.h,137] [65303] [info]: 服务启动成功！
+[2025-11-12 14:37:55.308] [amo_etcd.h,54] [65303] [info]: 注册成功: /service/speech_service/instance   127.0.0.1:10001
+[2025-11-12 14:37:55.308] [SpeechService.h,162] [65303] [info]: 语音识别子服务实例构建成功！
+[2025-11-12 14:38:54.784] [SpeechService.h,71] [65303] [info]: rpc_server启动成功
+[2025-11-12 14:39:23.025] [SpeechService.h,122] [65498] [info]: 添加Rpc服务成功！
+[2025-11-12 14:50:04.785] [SpeechService.h,122] [65973] [info]: 添加Rpc服务成功！
+[2025-11-12 14:52:42.304] [SpeechService.h,122] [66252] [info]: 添加Rpc服务成功！
+[2025-11-12 14:52:42.307] [SpeechService.h,137] [66252] [info]: 服务启动成功！
+[2025-11-12 14:52:42.334] [amo_etcd.h,54] [66252] [info]: 注册成功: /service/speech_service/instance   127.0.0.1:10001
+[2025-11-12 14:52:42.334] [SpeechService.h,162] [66252] [info]: 语音识别子服务实例构建成功！
+[2025-11-12 14:57:23.290] [SpeechService.h,122] [66696] [info]: 添加Rpc服务成功！
+[2025-11-12 15:08:19.363] [SpeechService.h,122] [72011] [info]: 添加Rpc服务成功！
+[2025-11-12 15:15:23.850] [SpeechService.h,122] [72356] [info]: 添加Rpc服务成功！
+[2025-11-12 15:15:23.850] [SpeechService.h,132] [72356] [error]: 服务启动失败！
+[2025-11-12 15:15:54.938] [SpeechService.h,122] [72528] [info]: 添加Rpc服务成功！
+[2025-11-12 15:15:54.940] [SpeechService.h,137] [72528] [info]: 服务启动成功！
+[2025-11-12 15:15:54.977] [amo_etcd.h,54] [72528] [info]: 注册成功: /service/speech_service/instance   127.0.0.1:10001
+[2025-11-12 15:15:54.977] [SpeechService.h,162] [72528] [info]: 语音识别子服务实例构建成功！
+[2025-11-12 15:18:34.190] [SpeechService.h,71] [72528] [info]: rpc_server启动成功
+[2025-11-12 15:18:48.563] [SpeechService.h,122] [72776] [info]: 添加Rpc服务成功！
+[2025-11-12 16:00:15.609] [SpeechService.h,122] [14373] [info]: 添加Rpc服务成功！
+[2025-11-12 16:03:21.729] [SpeechService.h,122] [14579] [info]: 添加Rpc服务成功！
+[2025-11-12 16:03:21.731] [SpeechService.h,137] [14579] [info]: 服务启动成功！
+[2025-11-12 16:03:21.779] [amo_etcd.h,54] [14579] [info]: 注册成功: /service/speech_service/instance   127.0.0.1:10001
+[2025-11-12 16:03:21.779] [SpeechService.h,162] [14579] [info]: 语音识别子服务实例构建成功！
+[2025-11-12 16:03:23.672] [SpeechService.h,71] [14579] [info]: rpc_server启动成功
+[2025-11-12 16:06:42.382] [SpeechService.h,122] [14769] [info]: 添加Rpc服务成功！
+[2025-11-12 16:20:51.933] [SpeechService.h,122] [19252] [info]: 添加Rpc服务成功！
+[2025-11-12 16:36:57.544] [SpeechService.h,122] [20613] [info]: 添加Rpc服务成功！
+[2025-11-12 17:03:43.122] [SpeechService.h,122] [21871] [info]: 添加Rpc服务成功！
+[2025-11-12 17:07:53.529] [SpeechService.h,122] [22168] [info]: 添加Rpc服务成功！
+[2025-11-12 17:14:44.755] [SpeechService.h,122] [22452] [info]: 添加Rpc服务成功！
+[2025-11-12 17:19:33.065] [SpeechService.h,122] [22817] [info]: 添加Rpc服务成功！
+[2025-11-12 17:23:58.925] [SpeechService.h,122] [23039] [info]: 添加Rpc服务成功！
+[2025-11-12 18:10:36.045] [SpeechService.h,122] [42307] [info]: 添加Rpc服务成功！
+[2025-11-12 18:10:36.048] [SpeechService.h,137] [42307] [info]: 服务启动成功！
+[2025-11-12 18:10:36.093] [amo_etcd.h,54] [42307] [info]: 注册成功: /service/speech_service/instance   127.0.0.1:10001
+[2025-11-12 18:10:36.093] [SpeechService.h,162] [42307] [info]: 语音识别子服务实例构建成功！
+[2025-11-12 18:10:40.916] [SpeechService.h,71] [42307] [info]: rpc_server启动成功

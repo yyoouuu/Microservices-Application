@@ -14,76 +14,80 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+
+PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace mic_ser {
-class SpeechRecognitionReqDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SpeechRecognitionReq> _instance;
-} _SpeechRecognitionReq_default_instance_;
-class SpeechRecognitionRspDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SpeechRecognitionRsp> _instance;
-} _SpeechRecognitionRsp_default_instance_;
+PROTOBUF_CONSTEXPR SpeechRecognitionReq::SpeechRecognitionReq(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.request_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.speech_datas_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.user_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.session_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct SpeechRecognitionReqDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SpeechRecognitionReqDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SpeechRecognitionReqDefaultTypeInternal() {}
+  union {
+    SpeechRecognitionReq _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpeechRecognitionReqDefaultTypeInternal _SpeechRecognitionReq_default_instance_;
+PROTOBUF_CONSTEXPR SpeechRecognitionRsp::SpeechRecognitionRsp(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.response_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.errmsg_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.recognition_result_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.success_)*/false
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct SpeechRecognitionRspDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SpeechRecognitionRspDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SpeechRecognitionRspDefaultTypeInternal() {}
+  union {
+    SpeechRecognitionRsp _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpeechRecognitionRspDefaultTypeInternal _SpeechRecognitionRsp_default_instance_;
 }  // namespace mic_ser
-static void InitDefaultsscc_info_SpeechRecognitionReq_speech_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
+static ::_pb::Metadata file_level_metadata_speech_2eproto[2];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_speech_2eproto = nullptr;
+static const ::_pb::ServiceDescriptor* file_level_service_descriptors_speech_2eproto[1];
 
-  {
-    void* ptr = &::mic_ser::_SpeechRecognitionReq_default_instance_;
-    new (ptr) ::mic_ser::SpeechRecognitionReq();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mic_ser::SpeechRecognitionReq::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SpeechRecognitionReq_speech_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SpeechRecognitionReq_speech_2eproto}, {}};
-
-static void InitDefaultsscc_info_SpeechRecognitionRsp_speech_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::mic_ser::_SpeechRecognitionRsp_default_instance_;
-    new (ptr) ::mic_ser::SpeechRecognitionRsp();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::mic_ser::SpeechRecognitionRsp::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SpeechRecognitionRsp_speech_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SpeechRecognitionRsp_speech_2eproto}, {}};
-
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_speech_2eproto[2];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_speech_2eproto = nullptr;
-static const ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor* file_level_service_descriptors_speech_2eproto[1];
-
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_speech_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_speech_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionReq, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionReq, request_id_),
-  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionReq, speech_datas_),
-  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionReq, user_id_),
-  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionReq, session_id_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionReq, _impl_.request_id_),
+  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionReq, _impl_.speech_datas_),
+  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionReq, _impl_.user_id_),
+  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionReq, _impl_.session_id_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionRsp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionRsp, response_id_),
-  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionRsp, success_),
-  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionRsp, errmsg_),
-  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionRsp, recognition_result_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionRsp, _impl_.response_id_),
+  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionRsp, _impl_.success_),
+  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionRsp, _impl_.errmsg_),
+  PROTOBUF_FIELD_OFFSET(::mic_ser::SpeechRecognitionRsp, _impl_.recognition_result_),
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::mic_ser::SpeechRecognitionReq)},
-  { 9, -1, sizeof(::mic_ser::SpeechRecognitionRsp)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, -1, sizeof(::mic_ser::SpeechRecognitionReq)},
+  { 10, -1, -1, sizeof(::mic_ser::SpeechRecognitionRsp)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mic_ser::_SpeechRecognitionReq_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::mic_ser::_SpeechRecognitionRsp_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::mic_ser::_SpeechRecognitionReq_default_instance_._instance,
+  &::mic_ser::_SpeechRecognitionRsp_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_speech_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -92,178 +96,225 @@ const char descriptor_table_protodef_speech_2eproto[] PROTOBUF_SECTION_VARIABLE(
   "tas\030\002 \001(\014\022\017\n\007user_id\030\003 \001(\t\022\022\n\nsession_id"
   "\030\004 \001(\t\"h\n\024SpeechRecognitionRsp\022\023\n\013respon"
   "se_id\030\001 \001(\t\022\017\n\007success\030\002 \001(\010\022\016\n\006errmsg\030\003"
-  " \001(\t\022\032\n\022recognition_result\030\004 \001(\t2a\n\rSpee"
-  "chService\022P\n\020SpeechRecogntion\022\035.mic_ser."
-  "SpeechRecognitionReq\032\035.mic_ser.SpeechRec"
-  "ognitionRspB\003\200\001\001b\006proto3"
+  " \001(\t\022\032\n\022recognition_result\030\004 \001(\t2b\n\rSpee"
+  "chService\022Q\n\021SpeechRecognition\022\035.mic_ser"
+  ".SpeechRecognitionReq\032\035.mic_ser.SpeechRe"
+  "cognitionRspB\003\200\001\001b\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_speech_2eproto_deps[1] = {
+static ::_pbi::once_flag descriptor_table_speech_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_speech_2eproto = {
+    false, false, 345, descriptor_table_protodef_speech_2eproto,
+    "speech.proto",
+    &descriptor_table_speech_2eproto_once, nullptr, 0, 2,
+    schemas, file_default_instances, TableStruct_speech_2eproto::offsets,
+    file_level_metadata_speech_2eproto, file_level_enum_descriptors_speech_2eproto,
+    file_level_service_descriptors_speech_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_speech_2eproto_sccs[2] = {
-  &scc_info_SpeechRecognitionReq_speech_2eproto.base,
-  &scc_info_SpeechRecognitionRsp_speech_2eproto.base,
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_speech_2eproto_once;
-static bool descriptor_table_speech_2eproto_initialized = false;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_speech_2eproto = {
-  &descriptor_table_speech_2eproto_initialized, descriptor_table_protodef_speech_2eproto, "speech.proto", 344,
-  &descriptor_table_speech_2eproto_once, descriptor_table_speech_2eproto_sccs, descriptor_table_speech_2eproto_deps, 2, 0,
-  schemas, file_default_instances, TableStruct_speech_2eproto::offsets,
-  file_level_metadata_speech_2eproto, 2, file_level_enum_descriptors_speech_2eproto, file_level_service_descriptors_speech_2eproto,
-};
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_speech_2eproto_getter() {
+  return &descriptor_table_speech_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_speech_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_speech_2eproto), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_speech_2eproto(&descriptor_table_speech_2eproto);
 namespace mic_ser {
 
 // ===================================================================
 
-void SpeechRecognitionReq::InitAsDefaultInstance() {
-}
 class SpeechRecognitionReq::_Internal {
  public:
 };
 
-SpeechRecognitionReq::SpeechRecognitionReq()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mic_ser.SpeechRecognitionReq)
+SpeechRecognitionReq::SpeechRecognitionReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:mic_ser.SpeechRecognitionReq)
 }
 SpeechRecognitionReq::SpeechRecognitionReq(const SpeechRecognitionReq& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  request_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpeechRecognitionReq* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.request_id_){}
+    , decltype(_impl_.speech_datas_){}
+    , decltype(_impl_.user_id_){}
+    , decltype(_impl_.session_id_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _impl_.request_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.request_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_request_id().empty()) {
-    request_id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.request_id_);
+    _this->_impl_.request_id_.Set(from._internal_request_id(), 
+      _this->GetArenaForAllocation());
   }
-  speech_datas_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.speech_datas_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.speech_datas_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_speech_datas().empty()) {
-    speech_datas_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.speech_datas_);
+    _this->_impl_.speech_datas_.Set(from._internal_speech_datas(), 
+      _this->GetArenaForAllocation());
   }
-  user_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.user_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.user_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_user_id().empty()) {
-    user_id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.user_id_);
+    _this->_impl_.user_id_.Set(from._internal_user_id(), 
+      _this->GetArenaForAllocation());
   }
-  session_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.session_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.session_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_session_id().empty()) {
-    session_id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.session_id_);
+    _this->_impl_.session_id_.Set(from._internal_session_id(), 
+      _this->GetArenaForAllocation());
   }
   // @@protoc_insertion_point(copy_constructor:mic_ser.SpeechRecognitionReq)
 }
 
-void SpeechRecognitionReq::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SpeechRecognitionReq_speech_2eproto.base);
-  request_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  speech_datas_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  user_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  session_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void SpeechRecognitionReq::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.request_id_){}
+    , decltype(_impl_.speech_datas_){}
+    , decltype(_impl_.user_id_){}
+    , decltype(_impl_.session_id_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.request_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.request_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.speech_datas_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.speech_datas_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.user_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.user_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.session_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.session_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 SpeechRecognitionReq::~SpeechRecognitionReq() {
   // @@protoc_insertion_point(destructor:mic_ser.SpeechRecognitionReq)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
 }
 
-void SpeechRecognitionReq::SharedDtor() {
-  request_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  speech_datas_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  user_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  session_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void SpeechRecognitionReq::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.request_id_.Destroy();
+  _impl_.speech_datas_.Destroy();
+  _impl_.user_id_.Destroy();
+  _impl_.session_id_.Destroy();
 }
 
 void SpeechRecognitionReq::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const SpeechRecognitionReq& SpeechRecognitionReq::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SpeechRecognitionReq_speech_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SpeechRecognitionReq::Clear() {
 // @@protoc_insertion_point(message_clear_start:mic_ser.SpeechRecognitionReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  request_id_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  speech_datas_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  user_id_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  session_id_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  _internal_metadata_.Clear();
+  _impl_.request_id_.ClearToEmpty();
+  _impl_.speech_datas_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
+  _impl_.session_id_.ClearToEmpty();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpeechRecognitionReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpeechRecognitionReq::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // string request_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_request_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "mic_ser.SpeechRecognitionReq.request_id"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "mic_ser.SpeechRecognitionReq.request_id"));
+        } else
+          goto handle_unusual;
         continue;
       // bytes speech_datas = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_speech_datas();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // string user_id = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_user_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "mic_ser.SpeechRecognitionReq.user_id"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "mic_ser.SpeechRecognitionReq.user_id"));
+        } else
+          goto handle_unusual;
         continue;
       // string session_id = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           auto str = _internal_mutable_session_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "mic_ser.SpeechRecognitionReq.session_id"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "mic_ser.SpeechRecognitionReq.session_id"));
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpeechRecognitionReq::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpeechRecognitionReq::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mic_ser.SpeechRecognitionReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string request_id = 1;
-  if (this->request_id().size() > 0) {
+  if (!this->_internal_request_id().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_request_id().data(), static_cast<int>(this->_internal_request_id().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -273,13 +324,13 @@ failure:
   }
 
   // bytes speech_datas = 2;
-  if (this->speech_datas().size() > 0) {
+  if (!this->_internal_speech_datas().empty()) {
     target = stream->WriteBytesMaybeAliased(
         2, this->_internal_speech_datas(), target);
   }
 
   // string user_id = 3;
-  if (this->user_id().size() > 0) {
+  if (!this->_internal_user_id().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_user_id().data(), static_cast<int>(this->_internal_user_id().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -289,7 +340,7 @@ failure:
   }
 
   // string session_id = 4;
-  if (this->session_id().size() > 0) {
+  if (!this->_internal_session_id().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_session_id().data(), static_cast<int>(this->_internal_session_id().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -299,8 +350,8 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mic_ser.SpeechRecognitionReq)
   return target;
@@ -310,92 +361,69 @@ size_t SpeechRecognitionReq::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mic_ser.SpeechRecognitionReq)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // string request_id = 1;
-  if (this->request_id().size() > 0) {
+  if (!this->_internal_request_id().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_request_id());
   }
 
   // bytes speech_datas = 2;
-  if (this->speech_datas().size() > 0) {
+  if (!this->_internal_speech_datas().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_speech_datas());
   }
 
   // string user_id = 3;
-  if (this->user_id().size() > 0) {
+  if (!this->_internal_user_id().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_user_id());
   }
 
   // string session_id = 4;
-  if (this->session_id().size() > 0) {
+  if (!this->_internal_session_id().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_session_id());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void SpeechRecognitionReq::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mic_ser.SpeechRecognitionReq)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SpeechRecognitionReq* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SpeechRecognitionReq>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mic_ser.SpeechRecognitionReq)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mic_ser.SpeechRecognitionReq)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpeechRecognitionReq::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    SpeechRecognitionReq::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpeechRecognitionReq::GetClassData() const { return &_class_data_; }
 
-void SpeechRecognitionReq::MergeFrom(const SpeechRecognitionReq& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mic_ser.SpeechRecognitionReq)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void SpeechRecognitionReq::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpeechRecognitionReq*>(&to_msg);
+  auto& from = static_cast<const SpeechRecognitionReq&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mic_ser.SpeechRecognitionReq)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.request_id().size() > 0) {
-
-    request_id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.request_id_);
+  if (!from._internal_request_id().empty()) {
+    _this->_internal_set_request_id(from._internal_request_id());
   }
-  if (from.speech_datas().size() > 0) {
-
-    speech_datas_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.speech_datas_);
+  if (!from._internal_speech_datas().empty()) {
+    _this->_internal_set_speech_datas(from._internal_speech_datas());
   }
-  if (from.user_id().size() > 0) {
-
-    user_id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.user_id_);
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
   }
-  if (from.session_id().size() > 0) {
-
-    session_id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.session_id_);
+  if (!from._internal_session_id().empty()) {
+    _this->_internal_set_session_id(from._internal_session_id());
   }
-}
-
-void SpeechRecognitionReq::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mic_ser.SpeechRecognitionReq)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpeechRecognitionReq::CopyFrom(const SpeechRecognitionReq& from) {
@@ -411,165 +439,217 @@ bool SpeechRecognitionReq::IsInitialized() const {
 
 void SpeechRecognitionReq::InternalSwap(SpeechRecognitionReq* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  request_id_.Swap(&other->request_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  speech_datas_.Swap(&other->speech_datas_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  user_id_.Swap(&other->user_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  session_id_.Swap(&other->session_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.request_id_, lhs_arena,
+      &other->_impl_.request_id_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.speech_datas_, lhs_arena,
+      &other->_impl_.speech_datas_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.user_id_, lhs_arena,
+      &other->_impl_.user_id_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.session_id_, lhs_arena,
+      &other->_impl_.session_id_, rhs_arena
+  );
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpeechRecognitionReq::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_speech_2eproto_getter, &descriptor_table_speech_2eproto_once,
+      file_level_metadata_speech_2eproto[0]);
 }
-
 
 // ===================================================================
 
-void SpeechRecognitionRsp::InitAsDefaultInstance() {
-}
 class SpeechRecognitionRsp::_Internal {
  public:
 };
 
-SpeechRecognitionRsp::SpeechRecognitionRsp()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:mic_ser.SpeechRecognitionRsp)
+SpeechRecognitionRsp::SpeechRecognitionRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:mic_ser.SpeechRecognitionRsp)
 }
 SpeechRecognitionRsp::SpeechRecognitionRsp(const SpeechRecognitionRsp& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  response_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpeechRecognitionRsp* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.response_id_){}
+    , decltype(_impl_.errmsg_){}
+    , decltype(_impl_.recognition_result_){}
+    , decltype(_impl_.success_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _impl_.response_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.response_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_response_id().empty()) {
-    response_id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.response_id_);
+    _this->_impl_.response_id_.Set(from._internal_response_id(), 
+      _this->GetArenaForAllocation());
   }
-  errmsg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.errmsg_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.errmsg_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_errmsg().empty()) {
-    errmsg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.errmsg_);
+    _this->_impl_.errmsg_.Set(from._internal_errmsg(), 
+      _this->GetArenaForAllocation());
   }
-  recognition_result_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.recognition_result_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.recognition_result_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_recognition_result().empty()) {
-    recognition_result_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.recognition_result_);
+    _this->_impl_.recognition_result_.Set(from._internal_recognition_result(), 
+      _this->GetArenaForAllocation());
   }
-  success_ = from.success_;
+  _this->_impl_.success_ = from._impl_.success_;
   // @@protoc_insertion_point(copy_constructor:mic_ser.SpeechRecognitionRsp)
 }
 
-void SpeechRecognitionRsp::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SpeechRecognitionRsp_speech_2eproto.base);
-  response_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  errmsg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  recognition_result_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  success_ = false;
+inline void SpeechRecognitionRsp::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.response_id_){}
+    , decltype(_impl_.errmsg_){}
+    , decltype(_impl_.recognition_result_){}
+    , decltype(_impl_.success_){false}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.response_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.response_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.errmsg_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.errmsg_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.recognition_result_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.recognition_result_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 SpeechRecognitionRsp::~SpeechRecognitionRsp() {
   // @@protoc_insertion_point(destructor:mic_ser.SpeechRecognitionRsp)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
 }
 
-void SpeechRecognitionRsp::SharedDtor() {
-  response_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  errmsg_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  recognition_result_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void SpeechRecognitionRsp::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.response_id_.Destroy();
+  _impl_.errmsg_.Destroy();
+  _impl_.recognition_result_.Destroy();
 }
 
 void SpeechRecognitionRsp::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const SpeechRecognitionRsp& SpeechRecognitionRsp::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SpeechRecognitionRsp_speech_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SpeechRecognitionRsp::Clear() {
 // @@protoc_insertion_point(message_clear_start:mic_ser.SpeechRecognitionRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  response_id_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  errmsg_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  recognition_result_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  success_ = false;
-  _internal_metadata_.Clear();
+  _impl_.response_id_.ClearToEmpty();
+  _impl_.errmsg_.ClearToEmpty();
+  _impl_.recognition_result_.ClearToEmpty();
+  _impl_.success_ = false;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpeechRecognitionRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpeechRecognitionRsp::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // string response_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_response_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "mic_ser.SpeechRecognitionRsp.response_id"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "mic_ser.SpeechRecognitionRsp.response_id"));
+        } else
+          goto handle_unusual;
         continue;
       // bool success = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          success_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _impl_.success_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // string errmsg = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_errmsg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "mic_ser.SpeechRecognitionRsp.errmsg"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "mic_ser.SpeechRecognitionRsp.errmsg"));
+        } else
+          goto handle_unusual;
         continue;
       // string recognition_result = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           auto str = _internal_mutable_recognition_result();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "mic_ser.SpeechRecognitionRsp.recognition_result"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "mic_ser.SpeechRecognitionRsp.recognition_result"));
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpeechRecognitionRsp::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpeechRecognitionRsp::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:mic_ser.SpeechRecognitionRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string response_id = 1;
-  if (this->response_id().size() > 0) {
+  if (!this->_internal_response_id().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_response_id().data(), static_cast<int>(this->_internal_response_id().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -579,13 +659,13 @@ failure:
   }
 
   // bool success = 2;
-  if (this->success() != 0) {
+  if (this->_internal_success() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_success(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(2, this->_internal_success(), target);
   }
 
   // string errmsg = 3;
-  if (this->errmsg().size() > 0) {
+  if (!this->_internal_errmsg().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_errmsg().data(), static_cast<int>(this->_internal_errmsg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -595,7 +675,7 @@ failure:
   }
 
   // string recognition_result = 4;
-  if (this->recognition_result().size() > 0) {
+  if (!this->_internal_recognition_result().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_recognition_result().data(), static_cast<int>(this->_internal_recognition_result().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -605,8 +685,8 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:mic_ser.SpeechRecognitionRsp)
   return target;
@@ -616,89 +696,67 @@ size_t SpeechRecognitionRsp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:mic_ser.SpeechRecognitionRsp)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // string response_id = 1;
-  if (this->response_id().size() > 0) {
+  if (!this->_internal_response_id().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_response_id());
   }
 
   // string errmsg = 3;
-  if (this->errmsg().size() > 0) {
+  if (!this->_internal_errmsg().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_errmsg());
   }
 
   // string recognition_result = 4;
-  if (this->recognition_result().size() > 0) {
+  if (!this->_internal_recognition_result().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_recognition_result());
   }
 
   // bool success = 2;
-  if (this->success() != 0) {
+  if (this->_internal_success() != 0) {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void SpeechRecognitionRsp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:mic_ser.SpeechRecognitionRsp)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SpeechRecognitionRsp* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SpeechRecognitionRsp>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:mic_ser.SpeechRecognitionRsp)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:mic_ser.SpeechRecognitionRsp)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpeechRecognitionRsp::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    SpeechRecognitionRsp::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpeechRecognitionRsp::GetClassData() const { return &_class_data_; }
 
-void SpeechRecognitionRsp::MergeFrom(const SpeechRecognitionRsp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:mic_ser.SpeechRecognitionRsp)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void SpeechRecognitionRsp::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpeechRecognitionRsp*>(&to_msg);
+  auto& from = static_cast<const SpeechRecognitionRsp&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:mic_ser.SpeechRecognitionRsp)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.response_id().size() > 0) {
-
-    response_id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.response_id_);
+  if (!from._internal_response_id().empty()) {
+    _this->_internal_set_response_id(from._internal_response_id());
   }
-  if (from.errmsg().size() > 0) {
-
-    errmsg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.errmsg_);
+  if (!from._internal_errmsg().empty()) {
+    _this->_internal_set_errmsg(from._internal_errmsg());
   }
-  if (from.recognition_result().size() > 0) {
-
-    recognition_result_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.recognition_result_);
+  if (!from._internal_recognition_result().empty()) {
+    _this->_internal_set_recognition_result(from._internal_recognition_result());
   }
-  if (from.success() != 0) {
-    _internal_set_success(from._internal_success());
+  if (from._internal_success() != 0) {
+    _this->_internal_set_success(from._internal_success());
   }
-}
-
-void SpeechRecognitionRsp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:mic_ser.SpeechRecognitionRsp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpeechRecognitionRsp::CopyFrom(const SpeechRecognitionRsp& from) {
@@ -714,20 +772,29 @@ bool SpeechRecognitionRsp::IsInitialized() const {
 
 void SpeechRecognitionRsp::InternalSwap(SpeechRecognitionRsp* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  response_id_.Swap(&other->response_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  errmsg_.Swap(&other->errmsg_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  recognition_result_.Swap(&other->recognition_result_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(success_, other->success_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.response_id_, lhs_arena,
+      &other->_impl_.response_id_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.errmsg_, lhs_arena,
+      &other->_impl_.errmsg_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.recognition_result_, lhs_arena,
+      &other->_impl_.recognition_result_, rhs_arena
+  );
+  swap(_impl_.success_, other->_impl_.success_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpeechRecognitionRsp::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_speech_2eproto_getter, &descriptor_table_speech_2eproto_once,
+      file_level_metadata_speech_2eproto[1]);
 }
-
 
 // ===================================================================
 
@@ -742,11 +809,11 @@ const ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor* SpeechService::GetDescriptor()
   return descriptor();
 }
 
-void SpeechService::SpeechRecogntion(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
+void SpeechService::SpeechRecognition(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
                          const ::mic_ser::SpeechRecognitionReq*,
                          ::mic_ser::SpeechRecognitionRsp*,
                          ::google::protobuf::Closure* done) {
-  controller->SetFailed("Method SpeechRecogntion() not implemented.");
+  controller->SetFailed("Method SpeechRecognition() not implemented.");
   done->Run();
 }
 
@@ -758,7 +825,7 @@ void SpeechService::CallMethod(const ::PROTOBUF_NAMESPACE_ID::MethodDescriptor* 
   GOOGLE_DCHECK_EQ(method->service(), file_level_service_descriptors_speech_2eproto[0]);
   switch(method->index()) {
     case 0:
-      SpeechRecogntion(controller,
+      SpeechRecognition(controller,
              ::PROTOBUF_NAMESPACE_ID::internal::DownCast<const ::mic_ser::SpeechRecognitionReq*>(
                  request),
              ::PROTOBUF_NAMESPACE_ID::internal::DownCast<::mic_ser::SpeechRecognitionRsp*>(
@@ -808,7 +875,7 @@ SpeechService_Stub::~SpeechService_Stub() {
   if (owns_channel_) delete channel_;
 }
 
-void SpeechService_Stub::SpeechRecogntion(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
+void SpeechService_Stub::SpeechRecognition(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
                               const ::mic_ser::SpeechRecognitionReq* request,
                               ::mic_ser::SpeechRecognitionRsp* response,
                               ::google::protobuf::Closure* done) {
@@ -819,11 +886,13 @@ void SpeechService_Stub::SpeechRecogntion(::PROTOBUF_NAMESPACE_ID::RpcController
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace mic_ser
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::mic_ser::SpeechRecognitionReq* Arena::CreateMaybeMessage< ::mic_ser::SpeechRecognitionReq >(Arena* arena) {
-  return Arena::CreateInternal< ::mic_ser::SpeechRecognitionReq >(arena);
+template<> PROTOBUF_NOINLINE ::mic_ser::SpeechRecognitionReq*
+Arena::CreateMaybeMessage< ::mic_ser::SpeechRecognitionReq >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mic_ser::SpeechRecognitionReq >(arena);
 }
-template<> PROTOBUF_NOINLINE ::mic_ser::SpeechRecognitionRsp* Arena::CreateMaybeMessage< ::mic_ser::SpeechRecognitionRsp >(Arena* arena) {
-  return Arena::CreateInternal< ::mic_ser::SpeechRecognitionRsp >(arena);
+template<> PROTOBUF_NOINLINE ::mic_ser::SpeechRecognitionRsp*
+Arena::CreateMaybeMessage< ::mic_ser::SpeechRecognitionRsp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::mic_ser::SpeechRecognitionRsp >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

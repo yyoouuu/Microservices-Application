@@ -19,3 +19,15 @@
 [2025-11-11 13:12:00.922] [amo_etcd.h,54] [17425] [info]: 注册成功: server/user/instance2   127.0.0.1:8081
 [2025-11-11 13:12:00.923] [amo_etcd.h,139] [17502] [debug]: 下线服务: server/user/instance1-127.0.0.1:8080
 [2025-11-11 13:12:00.923] [amo_etcd.h,72] [17425] [debug]: 服务注销: server/user/instance1
+[2025-11-12 17:02:11.214] [amo_etcd.h,133] [21382] [debug]: 新增服务: server/user/instance1-127.0.0.1:8080
+[2025-11-12 17:02:11.214] [amo_etcd.h,54] [21305] [info]: 注册成功: server/user/instance1   127.0.0.1:8080
+[2025-11-12 17:02:11.215] [amo_etcd.h,133] [21382] [debug]: 新增服务: server/user/instance2-127.0.0.1:8081
+[2025-11-12 17:02:11.215] [amo_etcd.h,54] [21305] [info]: 注册成功: server/user/instance2   127.0.0.1:8081
+[2025-11-12 17:02:11.216] [amo_etcd.h,139] [21382] [debug]: 下线服务: server/user/instance1-127.0.0.1:8080
+[2025-11-12 17:02:11.216] [amo_etcd.h,72] [21305] [debug]: 服务注销: server/user/instance1
+[2025-11-12 22:49:23.368] [amo_etcd.h,54] [53410] [info]: 注册成功: server/user/instance1   127.0.0.1:8080
+[2025-11-12 22:49:23.368] [amo_etcd.h,133] [53487] [debug]: 新增服务: server/user/instance1-127.0.0.1:8080
+[2025-11-12 22:49:23.370] [amo_etcd.h,133] [53487] [debug]: 新增服务: server/user/instance2-127.0.0.1:8081
+[2025-11-12 22:49:23.370] [amo_etcd.h,54] [53410] [info]: 注册成功: server/user/instance2   127.0.0.1:8081
+[2025-11-12 22:49:23.372] [amo_etcd.h,72] [53410] [debug]: 服务注销: server/user/instance1
+[2025-11-12 22:49:23.372] [amo_etcd.h,139] [53487] [debug]: 下线服务: server/user/instance1-127.0.0.1:8080

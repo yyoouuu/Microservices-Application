@@ -25,5 +25,5 @@ message SpeechRecognitionRsp
 // 语音识别服务
 service SpeechService
 {
-    rpc SpeechRecogntion(SpeechRecognitionReq) returns (SpeechRecognitionRsp);
+    rpc SpeechRecognition(SpeechRecognitionReq) returns (SpeechRecognitionRsp);
 }

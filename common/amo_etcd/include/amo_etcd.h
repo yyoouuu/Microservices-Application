@@ -10,7 +10,7 @@
 #include <unordered_map>
 #include "logger.h"
 
-namespace grpc_ns
+namespace etcd_ns
 {
     class Registry
     {

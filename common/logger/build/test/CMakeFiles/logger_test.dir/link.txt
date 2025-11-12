@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/logger_test.dir/main.cpp.o -o /home/amoureux/amoureux/Microservices/common/logger/test/logger_test  /home/amoureux/amoureux/Microservices/common/logger/lib/libamo_log.a /usr/lib/x86_64-linux-gnu/libfmt.so.9.1.0 

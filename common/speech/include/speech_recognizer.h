@@ -13,8 +13,8 @@
 
 #pragma once
 #include "../../../third_party/speech_recognition/speech.h"
-#include "../../logger/src/logger.h"     //  先包含类定义
-#include "../../logger/src/logger_def.h" // 再包含宏定义
+#include "../../logger/include/logger.h"     //  先包含类定义
+#include "../../logger/include/logger_def.h" // 再包含宏定义
 #include <memory>
 /**
  * 语音识别器
@@ -88,7 +88,7 @@ namespace speech_ns
             aip::get_file_content(file_path, &file_content);
 
             std::map<std::string, std::string> options; // 可设置可选参数
-            Json::Value result_json = _client->recognize(file_content, format, sample_rate, options);
+            Json::Value result_json = _client.recognize(file_content, format, sample_rate, options);
 
             // 判断百度返回错误
             if (result_json.isMember("err_no") && result_json["err_no"].asInt() != 0)

@@ -1,5 +1,6 @@
 //主要实现语音识别子服务的服务器的搭建
-#include "speech_server.hpp"
+#include "SpeechService.h"
+#include <butil/logging.h>
 #include <gflags/gflags.h>
 
 DEFINE_string(log_name, "main_logger", "发布模式下，用于指定日志的输出文件");
@@ -14,22 +15,23 @@ DEFINE_int32(listen_port, 10001, "Rpc服务器监听端口");
 DEFINE_int32(rpc_timeout, -1, "Rpc调用超时时间");
 DEFINE_int32(rpc_threads, 1, "Rpc的IO线程数量");
 
-DEFINE_string(app_id, "60694095", "语音平台应用ID");
-DEFINE_string(api_key, "PWn6zlsxym8VwpBW8Or4PPGe", "语音平台API密钥");
-DEFINE_string(secret_key, "Bl0mn74iyAkr3FzCo5TZV7lBq7NYoms9", "语音平台加密密钥");
+DEFINE_string(app_id, "120716329", "语音平台应用ID");
+DEFINE_string(api_key, "4miJFxqVYsePhbzcz5zmXiW9", "语音平台API密钥");
+DEFINE_string(secret_key, "N3SpF7ELheRyYiMN2mk2zJWHtWBAATzQ", "语音平台加密密钥");
+
 
 int main(int argc, char *argv[])
 {
     //读取配置
     google::ParseCommandLineFlags(&argc, &argv, true);
     //初始化日志系统
-    auto log = Logger::instance();
+    auto log = HSDK::Logger::instance();
     log->init(FLAGS_log_name, FLAGS_log_file);
 
     //语音识别服务构建
-    MyTest::SpeechServerBuilder ssb;
+    amo_speech_server::SpeechServerBuilder ssb;
     //创建 RPC 服务端
-    ssb.make_asr_object(FLAGS_app_id, FLAGS_api_key, FLAGS_secret_key);
+    ssb.make_speecher_object(FLAGS_app_id, FLAGS_api_key, FLAGS_secret_key);
     //rpc服务对象构建
     ssb.make_rpc_server(FLAGS_listen_port, FLAGS_rpc_timeout, FLAGS_rpc_threads);
     //注册服务信息

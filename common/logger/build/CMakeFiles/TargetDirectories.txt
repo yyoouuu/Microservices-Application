@@ -1,0 +1,6 @@
+/home/amoureux/amoureux/Microservices/common/logger/build/CMakeFiles/amo_log.dir
+/home/amoureux/amoureux/Microservices/common/logger/build/CMakeFiles/edit_cache.dir
+/home/amoureux/amoureux/Microservices/common/logger/build/CMakeFiles/rebuild_cache.dir
+/home/amoureux/amoureux/Microservices/common/logger/build/test/CMakeFiles/logger_test.dir
+/home/amoureux/amoureux/Microservices/common/logger/build/test/CMakeFiles/edit_cache.dir
+/home/amoureux/amoureux/Microservices/common/logger/build/test/CMakeFiles/rebuild_cache.dir

@@ -1429,3 +1429,20 @@
 [2025-11-09 11:11:23.128] [main.cpp,36] [27798] [info]: LOG_INFO:index = 8
 [2025-11-09 11:11:23.134] [main.cpp,36] [27798] [info]: LOG_INFO:index = 9
 [2025-11-09 11:11:23.150] [main.cpp,41] [27798] [info]: ==== Logging test finished ====
+[2025-11-12 21:27:14.232] [main.cpp,25] [46163] [trace]: LOG_TRACE: abc22
+[2025-11-12 21:27:14.232] [main.cpp,26] [46163] [debug]: LOG_DEBUG: abc33
+[2025-11-12 21:27:14.232] [main.cpp,27] [46163] [info]: LOG_INFO: abc33
+[2025-11-12 21:27:14.233] [main.cpp,28] [46163] [warning]: LOG_WARN: abc33
+[2025-11-12 21:27:14.233] [main.cpp,29] [46163] [error]: LOG_ERROR: abc33
+[2025-11-12 21:27:14.233] [main.cpp,30] [46163] [critical]: LOG_CRITI: abc33
+[2025-11-12 21:27:14.233] [main.cpp,36] [46163] [info]: LOG_INFO:index = 0
+[2025-11-12 21:27:14.238] [main.cpp,36] [46163] [info]: LOG_INFO:index = 1
+[2025-11-12 21:27:14.244] [main.cpp,36] [46163] [info]: LOG_INFO:index = 2
+[2025-11-12 21:27:14.249] [main.cpp,36] [46163] [info]: LOG_INFO:index = 3
+[2025-11-12 21:27:14.256] [main.cpp,36] [46163] [info]: LOG_INFO:index = 4
+[2025-11-12 21:27:14.261] [main.cpp,36] [46163] [info]: LOG_INFO:index = 5
+[2025-11-12 21:27:14.267] [main.cpp,36] [46163] [info]: LOG_INFO:index = 6
+[2025-11-12 21:27:14.272] [main.cpp,36] [46163] [info]: LOG_INFO:index = 7
+[2025-11-12 21:27:14.278] [main.cpp,36] [46163] [info]: LOG_INFO:index = 8
+[2025-11-12 21:27:14.284] [main.cpp,36] [46163] [info]: LOG_INFO:index = 9
+[2025-11-12 21:27:14.289] [main.cpp,41] [46163] [info]: ==== Logging test finished ====

@@ -1,0 +1,5 @@
+/home/amoureux/amoureux/Microservices/common/amo_etcd/build/CMakeFiles/edit_cache.dir
+/home/amoureux/amoureux/Microservices/common/amo_etcd/build/CMakeFiles/rebuild_cache.dir
+/home/amoureux/amoureux/Microservices/common/amo_etcd/build/test/CMakeFiles/test_amo_etcd.dir
+/home/amoureux/amoureux/Microservices/common/amo_etcd/build/test/CMakeFiles/edit_cache.dir
+/home/amoureux/amoureux/Microservices/common/amo_etcd/build/test/CMakeFiles/rebuild_cache.dir
