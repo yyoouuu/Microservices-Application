@@ -22,7 +22,7 @@ find_package(gRPC REQUIRED)
 link_directories(/home/amoureux/amoureux/Microservices/common/logger/lib)
 
 # -------------------------------
-# 测试源文件
+# 收集源文件
 # -------------------------------
 file(GLOB TEST_SRC "*.cpp")  # 例如 test_amo_etcd.cpp
 

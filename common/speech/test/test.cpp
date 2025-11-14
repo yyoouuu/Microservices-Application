@@ -22,7 +22,7 @@
 int main()
 {
     // 创建智能语音识别对象（共享指针管理）
-    auto speechrecognizer = std::make_shared<speech::SpeechRecognizer>(
+    auto speechrecognizer = std::make_shared<speech_ns::SpeechRecognizer>(
         "120716329",                      // 百度语音应用 AppID
         "4miJFxqVYsePhbzcz5zmXiW9",       // API Key
         "N3SpF7ELheRyYiMN2mk2zJWHtWBAATzQ" // Secret Key

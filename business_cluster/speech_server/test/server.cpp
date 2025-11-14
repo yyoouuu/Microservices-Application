@@ -30,15 +30,17 @@ int main(int argc, char *argv[])
 
     //语音识别服务构建
     amo_speech_server::SpeechServerBuilder ssb;
-    //创建 RPC 服务端
+    //初始化语音识别模块
     ssb.make_speecher_object(FLAGS_app_id, FLAGS_api_key, FLAGS_secret_key);
-    //rpc服务对象构建
+    //初始化RPC服务器模块
     ssb.make_rpc_server(FLAGS_listen_port, FLAGS_rpc_timeout, FLAGS_rpc_threads);
-    //注册服务信息
+    //初始化服务注册模块
     ssb.make_reg_object(FLAGS_registry_host, FLAGS_base_service + FLAGS_instance_name, FLAGS_access_host);
+    
+    //构建RPC语音识别服务
     auto server = ssb.build();
+    //服务启动
     server->start();
-
     return 0;
 }
 

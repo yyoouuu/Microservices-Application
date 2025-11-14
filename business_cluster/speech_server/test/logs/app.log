@@ -76,3 +76,8 @@
 [2025-11-12 18:10:36.093] [amo_etcd.h,54] [42307] [info]: 注册成功: /service/speech_service/instance   127.0.0.1:10001
 [2025-11-12 18:10:36.093] [SpeechService.h,162] [42307] [info]: 语音识别子服务实例构建成功！
 [2025-11-12 18:10:40.916] [SpeechService.h,71] [42307] [info]: rpc_server启动成功
+[2025-11-14 15:28:08.111] [SpeechService.h,122] [23844] [info]: 添加Rpc服务成功！
+[2025-11-14 15:28:08.115] [SpeechService.h,137] [23844] [info]: 服务启动成功！
+[2025-11-14 15:28:08.174] [amo_etcd.h,54] [23844] [info]: 注册成功: /service/speech_service/instance   127.0.0.1:10001
+[2025-11-14 15:28:08.174] [SpeechService.h,162] [23844] [info]: 语音识别子服务实例构建成功！
+[2025-11-14 15:28:35.678] [SpeechService.h,71] [23844] [info]: rpc_server启动成功

@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/test_speech.dir/test.cpp.o -o /home/amoureux/amoureux/Microservices/common/speech/test/test_speech   -L/home/amoureux/amoureux/Microservices/common/logger/lib  -Wl,-rpath,/home/amoureux/amoureux/Microservices/common/logger/lib -lamo_log /usr/lib/x86_64-linux-gnu/libfmt.so.9.1.0 -lcurl -lcrypto -ljsoncpp 

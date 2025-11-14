@@ -1,0 +1,5 @@
+/home/amoureux/amoureux/Microservices/common/speech/build/CMakeFiles/edit_cache.dir
+/home/amoureux/amoureux/Microservices/common/speech/build/CMakeFiles/rebuild_cache.dir
+/home/amoureux/amoureux/Microservices/common/speech/build/test/CMakeFiles/test_speech.dir
+/home/amoureux/amoureux/Microservices/common/speech/build/test/CMakeFiles/edit_cache.dir
+/home/amoureux/amoureux/Microservices/common/speech/build/test/CMakeFiles/rebuild_cache.dir
