@@ -1,0 +1,5 @@
+/home/amoureux/amoureux/Microservices/business_cluster/file_server/build/CMakeFiles/edit_cache.dir
+/home/amoureux/amoureux/Microservices/business_cluster/file_server/build/CMakeFiles/rebuild_cache.dir
+/home/amoureux/amoureux/Microservices/business_cluster/file_server/build/test/CMakeFiles/file_server_test.dir
+/home/amoureux/amoureux/Microservices/business_cluster/file_server/build/test/CMakeFiles/edit_cache.dir
+/home/amoureux/amoureux/Microservices/business_cluster/file_server/build/test/CMakeFiles/rebuild_cache.dir

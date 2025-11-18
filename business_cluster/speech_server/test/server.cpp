@@ -1,6 +1,5 @@
 //主要实现语音识别子服务的服务器的搭建
 #include "SpeechService.h"
-#include <butil/logging.h>
 #include <gflags/gflags.h>
 
 DEFINE_string(log_name, "main_logger", "发布模式下，用于指定日志的输出文件");

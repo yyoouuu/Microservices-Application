@@ -23,6 +23,7 @@ namespace amo_speech_server
                                ::mic_ser::SpeechRecognitionRsp *response,      // 服务器填充响应内容的对象，最后返回给客户端
                                ::google::protobuf::Closure *done)
         {
+            brpc::ClosureGuard rpc_guard(done);
             APP_INFO("收到语音转文字请求！");
             // 1. 取出请求中的语音数据
             // 2. 调用语音sdk模块进行语音识别，得到响应

@@ -82,5 +82,13 @@
         "__tree": "cpp",
         "codecvt": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "protoc": {
+        "path": "protoc",
+        "compile_on_save": false,
+        "options": [
+            "-I${workspaceFolder}/common/protobuf"
+        ]
+    },
+    "cmake.sourceDirectory": "/home/amoureux/amoureux/Microservices/business_cluster/speech_server"
 }
